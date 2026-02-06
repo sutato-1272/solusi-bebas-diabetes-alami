@@ -8,10 +8,7 @@
     
     <meta name="description" content="Program pendampingan pemulihan diabetes secara alami. Solusi menurunkan gula darah tinggi tanpa ketergantungan obat kimia bersama Ibu Marlina.">
     <meta name="keywords" content="solusi bebas diabetes alami, terapi diabetes tanpa suntik, obat herbal diabetes ampuh, jasa konsultasi diabetes, ibu marlina diabetes, pengobatan diabetes kering dan basah">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#ecfeff">
 
     <script type="application/ld+json">
     {
@@ -21,32 +18,50 @@
       "image": "img/consultant-profile.webp",
       "description": "Layanan konsultasi dan pendampingan pemulihan diabetes terpercaya bersama Ibu Marlina. Melayani seluruh Indonesia.",
       "priceRange": "$$",
-      "areaServed": "Indonesia"
+      "areaServed": "Indonesia",
+      "telephone": "+6285283212205"
     }
     </script>
     
     <style>
-        /* === TITAN ENGINE: PURE CSS (SPEED WUSSS) === */
+        /* === TITAN ENGINE V5: SYSTEM FONT STACK (0ms LOAD TIME) === */
         :root {
-            --primary: #0e7490; /* Teal: Warna Medis & Ketenangan */
+            --primary: #0e7490; 
             --primary-dark: #155e75;
-            --secondary: #16a34a; /* Hijau: Herbal & Alami */
-            --accent: #f59e0b; /* Emas: Premium/Kualitas */
-            --dark: #0f172a;
+            --secondary: #16a34a; 
+            --accent: #d97706; /* Digelapkan sedikit dari #f59e0b untuk Contrast Score */
+            --dark: #020617;
             --light: #f8fafc;
+            --text-gray: #334155; /* Slate 700 - Lebih gelap untuk aksesibilitas */
+            --text-light-gray: #475569; /* Slate 600 - Agar lulus kontras rasio */
             --shadow: 0 10px 40px -10px rgba(14, 116, 144, 0.15);
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--light); color: #334155; line-height: 1.6; overflow-x: hidden; }
+        /* PERUBAHAN FONT: Menggunakan System Font agar Speed 100 */
+        body { 
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; 
+            background-color: var(--light); 
+            color: var(--text-gray); 
+            line-height: 1.6; 
+            margin: 0;
+            padding: 0;
+        }
         
-        /* TYPOGRAPHY */
-        h1, h2, h3 { font-family: 'Outfit', sans-serif; font-weight: 800; line-height: 1.2; color: #1e293b; }
+        h1, h2, h3 { 
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; 
+            font-weight: 800; 
+            line-height: 1.2; 
+            color: #1e293b; 
+            letter-spacing: -0.02em;
+        }
+
+        /* UTILITIES */
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
         .text-primary { color: var(--primary); }
         .text-green { color: var(--secondary); }
         .text-gold { color: var(--accent); }
         .text-center { text-align: center; }
-        strong { color: #0f172a; }
+        strong { color: #0f172a; font-weight: 700; }
         
         /* LAYOUT */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
@@ -64,27 +79,27 @@
             position: relative; overflow: hidden;
         }
         .hero-badge {
-            display: inline-block; background: #dcfce7; color: #15803d;
+            display: inline-block; background: #dcfce7; color: #14532d; /* Text digelapkan (Green 900) */
             padding: 0.5rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.85rem;
             margin-bottom: 1.5rem; border: 1px solid #86efac; letter-spacing: 0.5px;
         }
         .hero-img { 
-            width: 100%; border-radius: 20px; 
+            width: 100%; height: auto; border-radius: 20px; 
             box-shadow: 20px 20px 0 var(--primary);
-            transition: 0.5s;
+            transition: transform 0.3s ease-out; /* Optimasi animasi */
         }
-        .hero-img:hover { transform: scale(1.02); }
+        .hero-img:hover { transform: scale(1.01); }
 
         /* BUTTONS */
         .btn {
             display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
             padding: 1rem 2rem; border-radius: 12px; font-weight: 700; text-decoration: none;
-            transition: all 0.3s; cursor: pointer; border: none; font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; border: none; font-size: 1rem;
         }
         .btn-primary { background: var(--primary); color: #fff; box-shadow: 0 10px 20px rgba(14, 116, 144, 0.3); }
-        .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(14, 116, 144, 0.4); background: var(--primary-dark); }
+        .btn-primary:hover { transform: translateY(-2px); background: var(--primary-dark); }
         .btn-wa { background: #25D366; color: #fff; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
-        .btn-wa:hover { background: #1da851; transform: translateY(-3px); }
+        .btn-wa:hover { background: #1da851; transform: translateY(-2px); }
         
         /* COMPARISON TABLE */
         .comparison-box {
@@ -98,7 +113,7 @@
         
         .comp-row { display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid #f1f5f9; }
         .comp-row div { padding: 1.2rem; text-align: center; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 10px; }
-        .comp-row div:first-child { background: #fef2f2; color: #64748b; } 
+        .comp-row div:first-child { background: #fef2f2; color: #475569; } 
         .comp-row div:last-child { background: #ecfeff; color: #0e7490; font-weight: 700; }
         .check-icon { color: var(--secondary); font-weight: 900; font-size: 1.2rem; }
         .cross-icon { color: #ef4444; font-weight: 900; font-size: 1.2rem; }
@@ -107,15 +122,13 @@
         .testi-card {
             background: #fff; padding: 2rem; border-radius: 1.5rem;
             border: 1px solid #e2e8f0; position: relative;
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
         }
-        .testi-card:hover { transform: translateY(-5px); border-color: var(--primary); }
         .stars { color: var(--accent); margin-bottom: 1rem; letter-spacing: 2px; }
         .testi-profile { display: flex; align-items: center; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px dashed #e2e8f0; }
-        .testi-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 2px solid var(--primary); }
+        .testi-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 1rem; border: 2px solid var(--primary); background: #f1f5f9; }
 
-        /* GALLERY GRID (MASONRY STYLE) */
+        /* GALLERY GRID */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -125,13 +138,13 @@
         }
         .gallery-item {
             position: relative; overflow: hidden; border-radius: 1rem;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; background: #f8fafc;
         }
         .gallery-item img {
             width: 100%; height: 100%; object-fit: cover;
-            transition: transform 0.5s ease;
+            transition: transform 0.3s ease;
         }
-        .gallery-item:hover img { transform: scale(1.1); }
+        .gallery-item:hover img { transform: scale(1.05); }
         .gallery-item.wide { grid-column: span 2; }
         .gallery-item.tall { grid-row: span 2; }
 
@@ -141,49 +154,45 @@
             display: flex; align-items: center; gap: 12px;
             background: #fff; padding: 10px 20px 10px 10px; border-radius: 50px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-            border: 2px solid #25D366; animation: float 3s ease-in-out infinite;
+            border: 2px solid #25D366; 
             text-decoration: none; transition: transform 0.3s;
         }
         .sticky-consultant:active { transform: scale(0.95); }
         .consultant-head { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; }
         .consultant-text { font-size: 0.85rem; line-height: 1.2; color: #334155; text-align: left; }
-        .consultant-text strong { display: block; color: #25D366; font-weight: 800; }
+        .consultant-text strong { display: block; color: #15803d; font-weight: 800; } /* Darker green */
 
-        /* ANIMATIONS */
-        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-5px); } 100% { transform: translateY(0px); } }
-        @keyframes pulse-glow { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
-        .pulse { animation: pulse-glow 2s infinite; }
+        /* ANIMATIONS (Optimized for performance) */
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
+        .pulse { animation: float 3s ease-in-out infinite; will-change: transform; }
 
         /* MOBILE RESPONSIVE */
         @media (max-width: 768px) {
             .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 2.5rem; }
-            .hero { text-align: center; flex-direction: column-reverse; padding-top: 120px; padding-bottom: 4rem; height: auto; }
-            .hero-img { width: 100%; max-width: 400px; margin: 0 auto 2rem; transform: none; box-shadow: none; }
+            .hero { text-align: center; flex-direction: column-reverse; padding-top: 100px; padding-bottom: 3rem; height: auto; display: block; }
+            .hero > div { margin-bottom: 2rem; }
+            .hero-img { width: 100%; max-width: 350px; margin: 0 auto; display: block; }
             .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
             .gallery-item.wide, .gallery-item.tall { grid-column: span 1; grid-row: span 1; }
-            h1 { font-size: 2.2rem; }
+            h1 { font-size: 2rem; }
             .container { padding: 0 1.2rem; }
+            .justify-center-mobile { justify-content: center; }
         }
         
-        /* SEO HIDDEN BLOCK (STRATEGI TARGET MARKET) */
-        .seo-hidden { 
-            background: #f1f5f9; color: #94a3b8; 
-            font-size: 1px; line-height: 1px; 
-            padding: 0; margin: 0; opacity: 0; height: 1px; overflow: hidden; 
-        }
+        .seo-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
     </style>
 </head>
 <body>
 
-    <nav style="position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border-bottom: 1px solid #e2e8f0;">
+    <nav style="position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #e2e8f0;">
         <div class="container" style="height: 70px; display: flex; justify-content: space-between; align-items: center;">
-            <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
-                <img src="https://placehold.co/100x100/16a34a/ffffff?text=+" alt="Logo Medis" style="height: 35px; width: 35px; border-radius: 50%;">
+            <a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 8px;" aria-label="Beranda Solusi Bebas Diabetes">
+                <img src="https://placehold.co/100x100/16a34a/ffffff?text=+" alt="Logo Medis" width="35" height="35" style="height: 35px; width: 35px; border-radius: 50%;">
                 <div style="line-height: 1.1;">
-                    <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.2rem; color: var(--primary);">
+                    <div style="font-weight: 800; font-size: 1.2rem; color: var(--primary);">
                         SOLUSI<span class="text-green">BEBAS</span>
                     </div>
-                    <div style="font-size: 0.6rem; letter-spacing: 1px; color: #64748b; font-weight: 700;">DIABETES CENTER</div>
+                    <div style="font-size: 0.6rem; letter-spacing: 1px; color: var(--text-light-gray); font-weight: 700;">DIABETES CENTER</div>
                 </div>
             </a>
             <a href="#konsultasi" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem; border-radius: 50px;">
@@ -199,7 +208,7 @@
                 <h1 style="margin-bottom: 1.5rem;">
                     Bebas Diabetes Secara <span class="text-green">Alami</span> Tanpa Ketergantungan Obat.
                 </h1>
-                <p style="color: #475569; font-size: 1.15rem; margin-bottom: 2rem; line-height: 1.7;">
+                <p style="color: var(--text-light-gray); font-size: 1.15rem; margin-bottom: 2rem; line-height: 1.7;">
                     Jangan biarkan masa tua Anda tersiksa komplikasi. Dapatkan <strong>Paket Herbal Terpadu</strong> dengan pendampingan dosis personal langsung dari Ibu Marlina.
                 </p>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;" class="justify-center-mobile">
@@ -208,14 +217,19 @@
                     </a>
                     <div style="display: flex; align-items: center; gap: 0.5rem;">
                         <span class="text-gold" style="font-size: 1.2rem;">★★★★★</span>
-                        <span style="font-size: 0.9rem; font-weight: 700; color: #334155;">4.9/5 Rating Pasien</span>
+                        <span style="font-size: 0.9rem; font-weight: 700; color: var(--text-gray);">4.9/5 Rating Pasien</span>
                     </div>
                 </div>
             </div>
             <div style="text-align: center;">
-                <img src="https://placehold.co/600x700/0e7490/ffffff?text=FOTO+IBU+MARLINA" alt="Ibu Marlina Konsultan Diabetes" class="hero-img">
+                <img src="https://placehold.co/600x700/0e7490/ffffff?text=FOTO+IBU+MARLINA" 
+                     alt="Ibu Marlina Konsultan Diabetes" 
+                     class="hero-img" 
+                     width="600" height="700" 
+                     fetchpriority="high">
+                
                 <div style="background: #fff; padding: 1rem; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: -30px; position: relative; z-index: 10; display: inline-block; max-width: 80%;">
-                    <p style="font-size: 0.85rem; color: #334155; font-style: italic;">
+                    <p style="font-size: 0.85rem; color: var(--text-gray); font-style: italic;">
                         "Saya tidak menjual obat. Saya menjual kesembuhan dan bimbingan sampai Anda sehat kembali."
                     </p>
                     <div style="font-weight: 800; color: var(--primary); margin-top: 0.5rem;">- Ibu Marlina</div>
@@ -228,7 +242,7 @@
         <div class="container">
             <div class="text-center" style="margin-bottom: 3rem;">
                 <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Kenapa <span style="color: #ef4444;">Jangan Beli</span> Sembarangan?</h2>
-                <p style="color: #64748b; max-width: 700px; margin: 0 auto;">
+                <p style="color: var(--text-light-gray); max-width: 700px; margin: 0 auto;">
                     Marketplace hanya menjual barang, bukan solusi. Diabetes butuh penanganan dosis yang tepat, bukan coba-coba.
                 </p>
             </div>
@@ -238,20 +252,20 @@
                     <div class="bg-teal">PENDAMPINGAN IBU MARLINA</div>
                 </div>
                 <div class="comp-row">
-                    <div><span class="cross-icon">✕</span> Barang dikirim, urusan selesai</div>
-                    <div><span class="check-icon">✓</span> <strong>Dipantau Rutin</strong> via WhatsApp</div>
+                    <div><span class="cross-icon" aria-hidden="true">✕</span> Barang dikirim, urusan selesai</div>
+                    <div><span class="check-icon" aria-hidden="true">✓</span> <strong>Dipantau Rutin</strong> via WhatsApp</div>
                 </div>
                 <div class="comp-row">
-                    <div><span class="cross-icon">✕</span> Dosis "Kira-Kira" sendiri (Bahaya!)</div>
-                    <div><span class="check-icon">✓</span> Dosis <strong>Disesuaikan</strong> Kondisi Gula</div>
+                    <div><span class="cross-icon" aria-hidden="true">✕</span> Dosis "Kira-Kira" sendiri (Bahaya!)</div>
+                    <div><span class="check-icon" aria-hidden="true">✓</span> Dosis <strong>Disesuaikan</strong> Kondisi Gula</div>
                 </div>
                 <div class="comp-row">
-                    <div><span class="cross-icon">✕</span> Bingung mau tanya siapa</div>
-                    <div><span class="check-icon">✓</span> Konsultasi <strong>Gratis Seumur Hidup</strong></div>
+                    <div><span class="cross-icon" aria-hidden="true">✕</span> Bingung mau tanya siapa</div>
+                    <div><span class="check-icon" aria-hidden="true">✓</span> Konsultasi <strong>Gratis Seumur Hidup</strong></div>
                 </div>
                 <div class="comp-row">
-                    <div><span class="cross-icon">✕</span> Resiko Barang Palsu/Oplosan</div>
-                    <div><span class="check-icon">✓</span> Garansi <strong>100% Original</strong> & Resmi</div>
+                    <div><span class="cross-icon" aria-hidden="true">✕</span> Resiko Barang Palsu/Oplosan</div>
+                    <div><span class="check-icon" aria-hidden="true">✓</span> Garansi <strong>100% Original</strong> & Resmi</div>
                 </div>
             </div>
         </div>
@@ -260,46 +274,46 @@
     <section class="py-20" style="background: #f0f9ff; padding-bottom: 2rem;">
         <div class="container">
             <h2 class="text-center" style="margin-bottom: 1rem;">Bukti Nyata <span class="text-green">Kesembuhan</span></h2>
-            <p class="text-center" style="color: #64748b; margin-bottom: 3rem;">
+            <p class="text-center" style="color: var(--text-light-gray); margin-bottom: 3rem;">
                 Mereka yang sudah membuktikan metode pendampingan kami.
             </p>
             <div class="grid-3">
                 <div class="testi-card">
                     <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.95rem; color: #334155; margin-bottom: 1.5rem;">
+                    <p style="font-size: 0.95rem; color: var(--text-gray); margin-bottom: 1.5rem;">
                         "Dulu kaki saya sering kesemutan dan lemas. Beli obat di online shop gak ada efek. Pas ikut program Ibu Marlina, dosisnya diatur ulang. Alhamdulillah gula turun dari 380 ke 125 dalam 2 minggu."
                     </p>
                     <div class="testi-profile">
-                        <img src="https://placehold.co/100x100/png?text=Bpk+Budi" alt="Foto Pasien" class="testi-img">
+                        <img src="https://placehold.co/100x100/png?text=Bpk+Budi" alt="Foto Pasien Bpk Budi" class="testi-img" width="50" height="50" loading="lazy">
                         <div>
                             <div style="font-weight: 700; font-size: 0.9rem;">Bpk. Budi Santoso (58 Th)</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Pensiunan BUMN - Jakarta</div>
+                            <div style="font-size: 0.8rem; color: var(--text-light-gray);">Pensiunan BUMN - Jakarta</div>
                         </div>
                     </div>
                 </div>
                 <div class="testi-card">
                     <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.95rem; color: #334155; margin-bottom: 1.5rem;">
+                    <p style="font-size: 0.95rem; color: var(--text-gray); margin-bottom: 1.5rem;">
                         "Yang saya suka itu konsultasinya. Ibu Marlina sabar banget jelasin pantangan makan. Jadi saya gak merasa berjuang sendirian. Sekarang sudah bisa jalan pagi lagi tanpa ngos-ngosan."
                     </p>
                     <div class="testi-profile">
-                        <img src="https://placehold.co/100x100/png?text=Ibu+Siti" alt="Foto Pasien" class="testi-img">
+                        <img src="https://placehold.co/100x100/png?text=Ibu+Siti" alt="Foto Pasien Ibu Siti" class="testi-img" width="50" height="50" loading="lazy">
                         <div>
                             <div style="font-weight: 700; font-size: 0.9rem;">Ibu Siti Aminah (62 Th)</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Ibu Rumah Tangga - Bekasi</div>
+                            <div style="font-size: 0.8rem; color: var(--text-light-gray);">Ibu Rumah Tangga - Bekasi</div>
                         </div>
                     </div>
                 </div>
                 <div class="testi-card">
                     <div class="stars">★★★★★</div>
-                    <p style="font-size: 0.95rem; color: #334155; margin-bottom: 1.5rem;">
+                    <p style="font-size: 0.95rem; color: var(--text-gray); margin-bottom: 1.5rem;">
                         "Jangan ragu konsultasi sama beliau. Beda banget sama penjual obat biasa. Ini beneran dibimbing. Herbalnya juga kerasa khasiatnya, badan jadi enteng. Terima kasih Ibu Marlina!"
                     </p>
                     <div class="testi-profile">
-                        <img src="https://placehold.co/100x100/png?text=Pak+Rahmat" alt="Foto Pasien" class="testi-img">
+                        <img src="https://placehold.co/100x100/png?text=Pak+Rahmat" alt="Foto Pasien Bpk Rahmat" class="testi-img" width="50" height="50" loading="lazy">
                         <div>
                             <div style="font-weight: 700; font-size: 0.9rem;">Bpk. Rahmat Hidayat (50 Th)</div>
-                            <div style="font-size: 0.8rem; color: #64748b;">Wiraswasta - Bandung</div>
+                            <div style="font-size: 0.8rem; color: var(--text-light-gray);">Wiraswasta - Bandung</div>
                         </div>
                     </div>
                 </div>
@@ -315,36 +329,36 @@
             
             <div class="gallery-grid">
                 <div class="gallery-item wide">
-                    <img src="https://placehold.co/600x400/16a34a/ffffff?text=HASIL+LAB+GULA+TURUN" alt="Bukti Hasil Lab">
+                    <img src="https://placehold.co/600x400/16a34a/ffffff?text=HASIL+LAB+GULA+TURUN" alt="Bukti Hasil Lab" width="600" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x400/f59e0b/ffffff?text=TESTI+WA+1" alt="Screenshot Chat WA">
+                    <img src="https://placehold.co/400x400/f59e0b/ffffff?text=TESTI+WA+1" alt="Screenshot Chat WA 1" width="400" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x400/0e7490/ffffff?text=TESTI+WA+2" alt="Screenshot Chat WA">
+                    <img src="https://placehold.co/400x400/0e7490/ffffff?text=TESTI+WA+2" alt="Screenshot Chat WA 2" width="400" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item tall">
-                    <img src="https://placehold.co/400x800/334155/ffffff?text=FOTO+PENGIRIMAN+PAKET" alt="Bukti Pengiriman">
+                    <img src="https://placehold.co/400x800/334155/ffffff?text=FOTO+PENGIRIMAN+PAKET" alt="Bukti Pengiriman" width="400" height="800" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x400/0e7490/ffffff?text=TESTI+WA+3" alt="Screenshot Chat WA">
+                    <img src="https://placehold.co/400x400/0e7490/ffffff?text=TESTI+WA+3" alt="Screenshot Chat WA 3" width="400" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x400/16a34a/ffffff?text=FOTO+KONDISI+KAKI" alt="Bukti Fisik">
+                    <img src="https://placehold.co/400x400/16a34a/ffffff?text=FOTO+KONDISI+KAKI" alt="Bukti Fisik" width="400" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x400/f59e0b/ffffff?text=TESTI+WA+4" alt="Screenshot Chat WA">
+                    <img src="https://placehold.co/400x400/f59e0b/ffffff?text=TESTI+WA+4" alt="Screenshot Chat WA 4" width="400" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item wide">
-                    <img src="https://placehold.co/600x400/334155/ffffff?text=FOTO+PAKET+DITERIMA" alt="Paket Sampai">
+                    <img src="https://placehold.co/600x400/334155/ffffff?text=FOTO+PAKET+DITERIMA" alt="Paket Sampai" width="600" height="400" loading="lazy" decoding="async">
                 </div>
                 <div class="gallery-item">
-                    <img src="https://placehold.co/400x400/0e7490/ffffff?text=TESTI+WA+5" alt="Screenshot Chat WA">
+                    <img src="https://placehold.co/400x400/0e7490/ffffff?text=TESTI+WA+5" alt="Screenshot Chat WA 5" width="400" height="400" loading="lazy" decoding="async">
                 </div>
             </div>
             
             <div class="text-center" style="margin-top: 2rem;">
-                <p style="font-size: 0.9rem; color: #64748b; font-style: italic;">
+                <p style="font-size: 0.9rem; color: var(--text-light-gray); font-style: italic;">
                     *Semua bukti di atas adalah asli dari pasien bimbingan Ibu Marlina.
                 </p>
             </div>
@@ -358,7 +372,7 @@
                 Jangan pertaruhkan kesehatan Anda dengan membeli produk tanpa pendampingan ahli. Konsultasikan kondisi gula darah Anda sekarang (GRATIS).
             </p>
             <a href="https://wa.me/6285283212205?text=Halo%20Ibu%20Marlina,%20saya%20mau%20konsultasi%20keluhan%20Diabetes." class="btn btn-wa pulse" style="padding: 1rem 2.5rem; font-size: 1.1rem;">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 10px;"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.669-.698c1.009.585 2.117.896 3.283.896 3.183 0 5.768-2.585 5.769-5.766.001-3.181-2.584-5.768-5.766-5.768zm9.263 4.98c-.1-1.356-.728-2.634-1.747-3.654-2.051-2.053-5.333-2.228-7.597-.406-2.27-1.815-5.546-1.64-7.596.411-1.025 1.026-1.652 2.311-1.748 3.673-.021.296-.035.617-.035.952 0 1.931.526 3.725 1.442 5.275L2 22l5.068-1.327c1.472.793 3.159 1.252 4.945 1.252 1.767 0 3.436-.451 4.898-1.234L22 22l-1.99-4.56c.928-1.554 1.462-3.354 1.462-5.295 0-.327-.013-.642-.033-.929z"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 10px;" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.599 2.669-.698c1.009.585 2.117.896 3.283.896 3.183 0 5.768-2.585 5.769-5.766.001-3.181-2.584-5.768-5.766-5.768zm9.263 4.98c-.1-1.356-.728-2.634-1.747-3.654-2.051-2.053-5.333-2.228-7.597-.406-2.27-1.815-5.546-1.64-7.596.411-1.025 1.026-1.652 2.311-1.748 3.673-.021.296-.035.617-.035.952 0 1.931.526 3.725 1.442 5.275L2 22l5.068-1.327c1.472.793 3.159 1.252 4.945 1.252 1.767 0 3.436-.451 4.898-1.234L22 22l-1.99-4.56c.928-1.554 1.462-3.354 1.462-5.295 0-.327-.013-.642-.033-.929z"/></svg>
                 Chat Ibu Marlina Sekarang
             </a>
             <p style="font-size: 0.85rem; margin-top: 1.5rem; color: #64748b;">
@@ -386,8 +400,8 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/6285283212205?text=Halo%20Ibu%20Marlina,%20saya%20mau%20konsultasi." class="sticky-consultant">
-        <img src="https://placehold.co/100x100/0e7490/ffffff?text=BU+MARLINA" alt="Chat Ibu Marlina" class="consultant-head">
+    <a href="https://wa.me/6285283212205?text=Halo%20Ibu%20Marlina,%20saya%20mau%20konsultasi." class="sticky-consultant" aria-label="Chat WhatsApp Ibu Marlina">
+        <img src="https://placehold.co/100x100/0e7490/ffffff?text=BU+MARLINA" alt="Chat Ibu Marlina" width="45" height="45" class="consultant-head">
         <div class="consultant-text">
             Butuh Bantuan?<br>
             <strong>Tanya Ibu Marlina</strong>
