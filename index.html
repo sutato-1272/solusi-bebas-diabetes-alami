@@ -12,7 +12,7 @@
     <meta property="og:type" content="business.business">
     <meta property="og:title" content="Bebas Diabetes Tanpa Amputasi - Ibu Marlina">
     <meta property="og:description" content="Lihat bukti kesembuhan pasien diabetes yang lolos dari amputasi. Konsultasi gratis sekarang.">
-    <meta property="og:image" content="https://solusi-bebas-diabetes-alami.vercel.app/img/ibu-marlina-konsultan-diabetes.webp">
+    <meta property="og:image" content="https://solusi-bebas-diabetes-alami.vercel.app/img/ibu-marlina-profile-update.webp">
     <meta property="og:url" content="https://solusi-bebas-diabetes-alami.vercel.app/">
 
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
@@ -22,7 +22,7 @@
       "@context": "https://schema.org",
       "@type": "MedicalBusiness",
       "name": "Solusi Bebas Diabetes Alami - Ibu Marlina",
-      "image": "https://solusi-bebas-diabetes-alami.vercel.app/img/ibu-marlina-konsultan-diabetes.webp",
+      "image": "https://solusi-bebas-diabetes-alami.vercel.app/img/ibu-marlina-profile-update.webp",
       "description": "Layanan konsultasi dan pendampingan pemulihan diabetes terpercaya bersama Ibu Marlina. Melayani seluruh Indonesia.",
       "priceRange": "$$",
       "address": {
@@ -34,20 +34,12 @@
         "latitude": "-6.175110", 
         "longitude": "106.865036"
       },
-      "telephone": "+6285283212205",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-          "opens": "08:00",
-          "closes": "21:00"
-        }
-      ]
+      "telephone": "+6285283212205"
     }
     </script>
     
     <style>
-        /* === TITAN ENGINE V7.0: PROTOCOL COMPLIANT (SYSTEM FONT ONLY) === */
+        /* === TITAN ENGINE V10.0 === */
         :root {
             --primary: #0e7490; 
             --primary-dark: #155e75;
@@ -60,9 +52,8 @@
             --shadow: 0 10px 40px -10px rgba(14, 116, 144, 0.15);
         }
 
-        /* PROTOKOL 1: SYSTEM FONT (NO EXTERNAL CSS) */
         body { 
-            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; 
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
             background-color: var(--light); 
             color: var(--text-gray); 
             line-height: 1.6; 
@@ -81,7 +72,6 @@
         .text-center { text-align: center; }
         strong { color: #0f172a; font-weight: 700; }
         
-        /* LAYOUT */
         .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
         .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
@@ -108,7 +98,6 @@
         }
         .hero-img:hover { transform: scale(1.01); }
 
-        /* BUTTONS */
         .btn {
             display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
             padding: 1rem 2rem; border-radius: 12px; font-weight: 700; text-decoration: none;
@@ -119,7 +108,6 @@
         .btn-wa { background: #25D366; color: #fff; box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
         .btn-wa:hover { background: #1da851; transform: translateY(-2px); }
         
-        /* COMPARISON TABLE */
         .comparison-box {
             background: #fff; border-radius: 1.5rem; overflow: hidden;
             box-shadow: var(--shadow); border: 1px solid #e2e8f0; margin-top: 2rem;
@@ -136,7 +124,6 @@
         .check-icon { color: var(--secondary); font-weight: 900; font-size: 1.2rem; }
         .cross-icon { color: #ef4444; font-weight: 900; font-size: 1.2rem; }
 
-        /* TESTIMONIAL CARDS */
         .testi-card {
             background: #fff; padding: 2rem; border-radius: 1.5rem;
             border: 1px solid #e2e8f0; position: relative;
@@ -149,8 +136,7 @@
         /* GALLERY GRID */
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-auto-rows: 200px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 1rem;
             margin-top: 2rem;
         }
@@ -160,14 +146,13 @@
         }
         .gallery-item img {
             width: 100%; height: 100%; 
-            object-fit: cover; /* Default */
+            object-fit: cover;
+            display: block;
             transition: transform 0.3s ease;
         }
         .gallery-item:hover img { transform: scale(1.02); }
-        .gallery-item.wide { grid-column: span 2; }
-        .gallery-item.tall { grid-row: span 2; }
+        .tall { grid-row: span 2; } 
 
-        /* STICKY CONSULTANT (PROTOCOL 6) */
         .sticky-consultant {
             position: fixed; bottom: 20px; right: 20px; z-index: 999;
             display: flex; align-items: center; gap: 12px;
@@ -181,16 +166,14 @@
         .consultant-text { font-size: 0.85rem; line-height: 1.2; color: #334155; text-align: left; }
         .consultant-text strong { display: block; color: #15803d; font-weight: 800; }
 
-        /* ANIMATIONS */
         @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
         .pulse { animation: float 3s ease-in-out infinite; will-change: transform; }
 
-        /* PROTOKOL 3: SEO CONTEXTUAL FOOTER (VISIBLE BUT SUBTLE) */
         .seo-footer {
-            background-color: #0f172a; /* Sangat gelap */
-            color: #64748b; /* Abu-abu redup */
+            background-color: #0f172a; 
+            color: #64748b; 
             padding: 2rem 0;
-            font-size: 11px; /* Font kecil sesuai protokol */
+            font-size: 11px;
             line-height: 1.6;
             text-align: center;
             border-top: 1px solid #1e293b;
@@ -201,14 +184,12 @@
             padding: 0 1.5rem;
         }
 
-        /* MOBILE RESPONSIVE */
         @media (max-width: 768px) {
             .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 2.5rem; }
             .hero { text-align: center; flex-direction: column-reverse; padding-top: 100px; padding-bottom: 3rem; height: auto; display: block; }
             .hero > div { margin-bottom: 2rem; }
             .hero-img { width: 100%; max-width: 350px; margin: 0 auto; display: block; }
-            .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
-            .gallery-item.wide, .gallery-item.tall { grid-column: span 1; grid-row: span 1; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
             h1 { font-size: 2rem; }
             .container { padding: 0 1.2rem; }
             .justify-center-mobile { justify-content: center; }
@@ -241,7 +222,6 @@
                 <h1 style="margin-bottom: 1.5rem;">
                     Bebas Diabetes Secara <span class="text-green">Alami</span> Tanpa Ketergantungan Obat.
                 </h1>
-                
                 <p style="color: var(--text-light-gray); font-size: 1.15rem; margin-bottom: 2rem; line-height: 1.7;">
                     Cegah Komplikasi Diabetes sejak dini. Jangan biarkan Masa Tua anda tersiksa karena berbagai Komplikasi Diabetes.
                     Tubuh kita sudah diciptakan sedemikian rupa mempunyai kemampuan untuk menyembuhkan dirinya sendiri!
@@ -258,10 +238,10 @@
                 </div>
             </div>
             <div style="text-align: center;">
-                <img src="img/ibu-marlina-konsultan-diabetes.webp" 
+                <img src="img/ibu-marlina-profile-update.webp" 
                      alt="Ibu Marlina Konsultan Diabetes" 
                      class="hero-img" 
-                     width="600" height="700" 
+                     width="600" height="750" 
                      fetchpriority="high">
                 
                 <div style="background: #fff; padding: 1rem; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.05); margin-top: -30px; position: relative; z-index: 10; display: inline-block; max-width: 80%;">
@@ -321,7 +301,7 @@
                         "Berawal dari Medical Check Up untuk Naik Haji, Gula darah puasa 400 mg/dL, hbA1c 9. Syarat harus Normal. Setelah terapi Natural dengan bimbingan Marlina Saragih selama 3 minggu, <strong>gula darah puasa sudah normal menjadi 126</strong>, hbA1c 5.7. Dan sudah melakukan ibadah Naik haji."
                     </p>
                     <div class="testi-profile">
-                        <img src="img/testimoni-diabetes-pak-dwi-haji.webp" alt="Pak Dwi Harijanto Testimoni Diabetes" class="testi-img" width="50" height="50" loading="lazy">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23cbd5e1'%3E%3Ccircle cx='50' cy='50' r='50'/%3E%3Cpath fill='%23475569' d='M50 45a18 18 0 100-36 18 18 0 000 36zm0 9c-20 0-40 10-40 30v6h80v-6c0-20-20-30-40-30z'/%3E%3C/svg%3E" alt="Ilustrasi Pak Dwi" class="testi-img" width="50" height="50" loading="lazy">
                         <div>
                             <div style="font-weight: 700; font-size: 0.9rem;">Pak Dwi Harijanto</div>
                             <div style="font-size: 0.8rem; color: var(--text-light-gray);">Kediri - Jawa Timur</div>
@@ -391,7 +371,7 @@
                         "25 Tahun Diabetes, sudah Bypass Jantung. Saya pikir harapan habis. Tapi setelah edukasi Ibu Marlina, hbA1c turun drastis dan hasilnya mengejutkan: <strong>Saya bisa Ereksi 80% di pagi hari!!!</strong> Bagi Pria 55 tahun, ini luar biasa!"
                     </p>
                     <div class="testi-profile">
-                        <img src="https://placehold.co/100x100/334155/ffffff?text=Pak+RH" alt="Pak RH Jakarta" class="testi-img" width="50" height="50" loading="lazy">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%23cbd5e1'%3E%3Ccircle cx='50' cy='50' r='50'/%3E%3Cpath fill='%23475569' d='M50 45a18 18 0 100-36 18 18 0 000 36zm0 9c-20 0-40 10-40 30v6h80v-6c0-20-20-30-40-30z'/%3E%3C/svg%3E" alt="Ilustrasi Pak RH" class="testi-img" width="50" height="50" loading="lazy">
                         <div>
                             <div style="font-weight: 700; font-size: 0.9rem;">Bpk. RH (55 Th)</div>
                             <div style="font-size: 0.8rem; color: var(--text-light-gray);">Pensiunan - Jakarta</div>
@@ -414,18 +394,33 @@
                 </div>
                 
                 <div class="gallery-item">
-                    <img src="img/pasien-diabetes-bapak-damanik-testimoni-6.webp" alt="Kondisi Pasien Membaik" width="400" height="400" loading="lazy" decoding="async">
+                    <img src="img/proses-penyembuhan-diabetes-1.webp" alt="Proses Penyembuhan Awal" width="600" height="600" loading="lazy" decoding="async">
                 </div>
+
                 <div class="gallery-item">
-                    <img src="img/pasien-diabetes-bapak-sipayung-testimoni-4.webp" alt="Dokumentasi Pasien Sipayung" width="400" height="400" loading="lazy" decoding="async">
+                    <img src="img/proses-penyembuhan-diabetes-2.webp" alt="Proses Penyembuhan Lanjutan" width="600" height="600" loading="lazy" decoding="async">
                 </div>
                 
-                <div class="gallery-item">
-                     <img src="img/pasien-diabetes-ibu-enik-testimoni-3.webp" alt="Ibu Enik Sembuh" width="400" height="400" loading="lazy" decoding="async">
+                <div class="gallery-item tall">
+                     <img src="img/dokumentasi-marlina-duta-diabetes-1.webp" alt="Ibu Marlina Bersama Duta Diabetes Sembuh" width="600" height="800" loading="lazy" decoding="async">
                 </div>
-                <div class="gallery-item">
-                    <img src="img/pasien-diabetes-testimoni-5.webp" alt="Ayah Ira Siahaan Sembuh" width="400" height="400" loading="lazy" decoding="async">
+
+                <div class="gallery-item tall">
+                     <img src="img/dokumentasi-marlina-duta-diabetes-2.webp" alt="Duta Diabetes Sembuh Total" width="600" height="800" loading="lazy" decoding="async">
                 </div>
+
+                <div class="gallery-item tall">
+                     <img src="img/dokumentasi-marlina-duta-diabetes-3.webp" alt="Testimoni Langsung Duta Diabetes" width="600" height="800" loading="lazy" decoding="async">
+                </div>
+
+                <div class="gallery-item tall">
+                    <img src="img/proses-penyembuhan-diabetes-3.webp" alt="Dokumentasi Kaki Sembuh Diabetes" width="600" height="800" loading="lazy" decoding="async">
+                </div>
+                
+                <div class="gallery-item tall">
+                    <img src="img/proses-penyembuhan-diabetes-4.webp" alt="Hasil Akhir Sembuh Total" width="600" height="800" loading="lazy" decoding="async">
+                </div>
+
             </div>
             
             <div class="text-center" style="margin-top: 2rem;">
@@ -476,7 +471,7 @@
     </footer>
 
     <a href="https://wa.me/6285283212205?text=Halo%20Ibu%20Marlina,%20saya%20mau%20konsultasi." class="sticky-consultant" aria-label="Chat WhatsApp Ibu Marlina">
-        <img src="img/ibu-marlina-konsultan-diabetes.webp" alt="Chat Ibu Marlina" width="45" height="45" class="consultant-head">
+        <img src="img/ibu-marlina-profile-update.webp" alt="Chat Ibu Marlina" width="45" height="45" class="consultant-head">
         <div class="consultant-text">
             Butuh Bantuan?<br>
             <strong>Tanya Ibu Marlina</strong>
